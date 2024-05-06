@@ -1,0 +1,147 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1b1924;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    user-select: none;
+}
+
+.main-container {
+  margin: 50px auto;
+  width: 50vw;
+}
+
+img{
+  width: 90px;
+}
+
+h2, h4 {
+  color: white;
+}
+
+h2{
+  line-height: 25px;
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+}
+
+.message-wrapper {
+  margin: 0 auto;
+
+}
+textarea, input {
+  font-family: "Inter", sans-serif;
+  font-style: 400;
+  background: #444059;
+  border-radius: 6px;
+  color: white;
+}
+
+textarea {
+  resize: none;
+  width: 317px;
+  height: 118px;
+  border: none;
+  line-height: 18.15px;
+  padding: 10px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  width: 152.85px;
+  text-align: center;
+  margin: 5px 2px;
+
+}
+
+#publish-btn {
+  background: #28A9F1;
+  color: black;
+  width: 317px;
+  border: none;
+  border-radius: 6px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#messages {
+  width: 317px;
+  margin: 0 auto;
+}
+
+.messages-wrapper {
+  background: white;
+  text-align: start;
+  padding: 10px 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.message-content{
+  padding: 5px 0;
+}
+
+.to, .from {
+  font-weight: 700;
+}
+
+.heart-div {
+  display: flex;
+  justify-content: space-between
+}
+
+.fa-heart {
+  padding-right: 8px;
+  cursor: pointer;
+}
+.fa-heart:hover {
+  color: red;
+}
+
+.like {
+  padding-left: 89%;
+  cursor: pointer;
+}
+.white-font{
+  color: white;
+}
+
+.disabled {
+  pointer-events: none;
+}
