@@ -160,6 +160,13 @@ input {
     justify-content: center;
   }
 
+  .from-to-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .message-container {
     display: flex;
     flex-direction: column;
