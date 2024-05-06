@@ -1,19 +1,19 @@
-// import methods from Firebase
+// Import methods from Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
-// define your DB url
+// Define your DB url
 const appSettings = {
     databaseURL: "https://playground-9c7b7-default-rtdb.asia-southeast1.firebasedatabase.app/"
 }
 
-//Save Firebase functions to variables and pass right parameters
+//Save Firebase functions
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
 const messagesInDB = ref(database, "messages")
 
 
-//DOM elements
+//DOM
 const textAreaEl = document.getElementById("message-box")
 const toEl = document.getElementById("to-input")
 const fromEl = document.getElementById("from-input")
@@ -22,7 +22,7 @@ const likeCounterEl = document.querySelector(".like-counter")
 const formEl = document.getElementById('message-form');
 const messagesEl = document.getElementById("messages")
 
-//Publish btn
+//Publish Button
 formEl.addEventListener("submit", (event) => {
   event.preventDefault()
   let messageValue = textAreaEl.value
@@ -59,22 +59,22 @@ onValue(messagesInDB, function(snapshot) {
   }
 });
 
-//clear text area & inputs
+//Clear Textarea & Inputs
 function clearAllValues() {
   textAreaEl.value = ""
   toEl.value = ""
   fromEl.value = ""
 }
 
-//clear old DB
+//Clear innerHTML (Old DB)
 function clearMessagesEl() {
   messagesEl.innerHTML = ""
 }
 
 
-// Render likes
+// Render Lkes
 function renderLikes() {
-  //select only new messages that do not have click event on heart icon
+  //Select only new messages that do not have click event on heart icon
   const likeEls = document.querySelectorAll(".fa-heart:not(.click-bound)");
 
   likeEls.forEach((heartIcon) => {
@@ -93,7 +93,7 @@ function renderLikes() {
   });
 }
 
-// Render messages
+// Render Messages in HTML
 function renderMessages(message, to, from) {
   let messageHtml = `<div class="messages-wrapper">
                         <p class="to">To ${to}</p>
