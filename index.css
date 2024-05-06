@@ -145,3 +145,26 @@ input {
 .disabled {
   pointer-events: none;
 }
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    margin-right: 125px;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .message-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
