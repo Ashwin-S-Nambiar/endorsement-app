@@ -10,6 +10,7 @@ Also has an option to like endorsements.***
 - HTML 5
 - CSS 3
 - JavaScript
+- Firebase
 
 ## 📷 Screenshots:
 
