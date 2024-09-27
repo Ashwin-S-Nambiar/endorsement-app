@@ -1,6 +1,6 @@
 # 🤝 Endorsements App
 
-Live: https://some-endorsements.netlify.app/
+**Live: https://some-endorsements.netlify.app/**
 
 ***An app which can be used to note down endorsements from other prople.
 The endorsements are stored in Firebase and displayed in the webpage under the Endorsements section.
